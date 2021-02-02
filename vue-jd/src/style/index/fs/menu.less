@@ -1,0 +1,111 @@
+.wrap {
+    background: #fff;
+    width: 190px;
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+
+    .menu-list {
+        background-color: #fefefe;
+        color: #636363;
+
+        .menu-item {
+            box-sizing: border-box;
+            width: 190px;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 18px;
+
+            .menu-lk-wrap {
+                display: inline-block;
+                a {
+                    font-size: 14px;
+                    color: #333;
+
+                    &:hover {
+                        color: #c81623;
+                    }
+                }
+            }
+            &:hover{
+                background-color: #d9d9d9;
+            }
+
+            &.menu-item-on {
+                background-color: #d9d9d9;
+            }
+
+            .menu-content {
+                position: absolute;
+                left: 190px;
+                top: 0px;
+                width: 798px;
+                min-height: 476px;
+                border: 1px solid #f7f7f7;
+                background-color: #fff;
+                box-shadow: 2px 0px 3px 3px rgba(0, 0, 0, .1);
+                z-index: 20;
+
+                .cate-part {
+                    padding: 20px 20px 10px;
+
+                    .tabs-wrap {
+                        display: flex;
+
+                        .tabs {
+                            a {
+                                margin-right: 10px;
+                                padding: 0 10px;
+                                height: 24px;
+                                display: inline-block;
+                                background-color: #333;
+                                line-height: 24px;
+                                color: #fff;
+
+                                &:hover {
+                                    background-color: #c81623;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .cate-detail {
+                    display: flex;
+                    flex-direction: column;
+                    .cate-detail-item {
+                        dt {
+                            float: left;
+                            width: 70px;
+                            text-align: right;
+                            font-weight: 700;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            padding: 5px 0;
+                        }
+
+                        dd {
+                            overflow: hidden;
+                            padding: 5px 0;
+                            float: left;
+
+                            a {
+                                margin: 3px 0;
+                                padding: 0 7px;
+                                height: 16px;
+                                line-height: 16px;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        color: #666;
+    }
+}
